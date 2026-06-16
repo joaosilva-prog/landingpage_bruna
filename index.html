@@ -296,9 +296,23 @@
     }
 
     @media (max-width: 480px) {
-      .hero { padding: 60px 0 0; }
-      .cta-btn { padding: 14px 32px; }
+    .hero { padding: 60px 0 0; }
+    .cta-btn { padding: 14px 32px; }
+
+    /* texto menor no mobile */
+    .hero-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      padding: 0 20px;
     }
+
+    /* círculo proporcional ao mobile */
+    .hero::before {
+      width: 340px;
+      height: 340px;
+      transform: translate(-50%, -50%);
+    }
+  }
   </style>
 </head>
 <body>
