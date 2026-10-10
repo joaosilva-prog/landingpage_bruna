@@ -327,9 +327,21 @@
     }
 
     .info-desc {
+      display: block;
       font-size: 0.9rem;
       color: var(--text-light);
       line-height: 1.6;
+    }
+
+    .info-desc address { font-style: normal; }
+
+    .info-link {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 6px 0;
+      color: var(--teal-text);
+      font-weight: 500;
+      text-underline-offset: 3px;
     }
 
     /* ── CTA SECTION ── */
@@ -514,8 +526,11 @@
         <span class="info-desc">Psicóloga clínica, especialista em Terapia Cognitivo-Comportamental na Infância (PUCPR) · CRP&nbsp;04/71168</span>
       </li>
       <li>
-        <span class="info-title">Modalidades</span>
-        <span class="info-desc">Presencial em Poços&nbsp;de&nbsp;Caldas&nbsp;–&nbsp;MG e online</span>
+        <span class="info-title">Atendimento presencial e online</span>
+        <div class="info-desc">
+          <address>Rua Paraíba, 485, Apto.&nbsp;4, Sala&nbsp;3 – Centro<br/>Poços&nbsp;de&nbsp;Caldas&nbsp;–&nbsp;MG</address>
+          <a class="info-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Para%C3%ADba%2C%20485%20-%20Centro%2C%20Po%C3%A7os%20de%20Caldas%20-%20MG" target="_blank" rel="noopener">Ver no mapa</a>
+        </div>
       </li>
       <li>
         <span class="info-title">Para quem</span>
@@ -537,7 +552,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© <span id="year">2026</span> <span class="brand-name">Bruna Villela</span> · Psicóloga Clínica · CRP&nbsp;04/71168<br/>Poços&nbsp;de&nbsp;Caldas&nbsp;–&nbsp;MG · Atendimento presencial e online</p>
+    <p>© <span id="year">2026</span> <span class="brand-name">Bruna Villela</span> · Psicóloga Clínica · CRP&nbsp;04/71168<br/>Rua Paraíba, 485, Apto.&nbsp;4, Sala&nbsp;3 – Centro · Poços&nbsp;de&nbsp;Caldas&nbsp;–&nbsp;MG<br/>Atendimento presencial e online</p>
   </footer>
 
   <a href="https://wa.me/5535998953906?text=Ol%C3%A1%2C%20Bruna!%20Vim%20pelo%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento." target="_blank" rel="noopener" class="sticky-cta" data-whatsapp="fixo" aria-hidden="true" tabindex="-1">Agendar pelo WhatsApp</a>
