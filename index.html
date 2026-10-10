@@ -408,14 +408,23 @@
       text-align: center;
     }
 
+    /* 4 itens lado a lado no computador, 2 por linha no tablet, empilhados no celular */
     .info-list {
       list-style: none;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px 32px;
-      max-width: 780px;
+      grid-template-columns: 1fr;
+      gap: 16px 28px;
+      max-width: 1080px;
       margin: 0 auto;
       text-align: left;
+    }
+
+    @media (min-width: 600px) {
+      .info-list { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 960px) {
+      .info-list { grid-template-columns: repeat(4, 1fr); }
     }
 
     .info-list li {
