@@ -413,11 +413,13 @@
       list-style: none;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 16px 28px;
+      gap: 32px 48px;
       max-width: 1080px;
       margin: 0 auto;
       text-align: left;
     }
+
+    .info .section-label { margin-bottom: 32px; }
 
     @media (min-width: 600px) {
       .info-list { grid-template-columns: repeat(2, 1fr); }
@@ -427,20 +429,13 @@
       .info-list { grid-template-columns: repeat(4, 1fr); }
     }
 
-    .info-list li {
-      padding: 18px 0 18px 20px;
-      border-left: 2px solid var(--teal);
-    }
-
-    .info-list li:nth-child(even) { border-left-color: var(--lavender); }
-
     .info-title {
       display: block;
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.2rem;
       font-weight: 500;
       color: var(--teal-text);
-      margin-bottom: 4px;
+      margin-bottom: 8px;
     }
 
     .info-desc {
@@ -666,7 +661,7 @@
       <li>
         <span class="info-title">Atendimento presencial e online</span>
         <div class="info-desc">
-          <address>Rua Paraíba, 485, Apto.&nbsp;4, Sala&nbsp;3 – Centro<br/>Poços&nbsp;de&nbsp;Caldas&nbsp;–&nbsp;MG</address>
+          <address>Rua Paraíba, 485, Apto.&nbsp;4, Sala&nbsp;3&nbsp;–&nbsp;Centro<br/>Poços&nbsp;de&nbsp;Caldas&nbsp;–&nbsp;MG</address>
           <a class="info-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Para%C3%ADba%2C%20485%20-%20Centro%2C%20Po%C3%A7os%20de%20Caldas%20-%20MG" target="_blank" rel="noopener">Ver no mapa</a>
         </div>
       </li>
